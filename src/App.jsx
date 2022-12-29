@@ -13,7 +13,7 @@ function App() {
     },[questions.length])
 
   return (
-    <div className="pt-[50px] w-screen h-screen flex justify-center items-center bg-[url('./assets/background.png')] bg-cover bg-no-repeat bg-center">
+    <div className="w-screen h-screen flex justify-center items-center bg-[url('./assets/background.png')] bg-cover bg-no-repeat bg-center">
         {gameOver ? <Result /> : <QuizCard /> }
     </div>
   );
