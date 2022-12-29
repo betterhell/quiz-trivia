@@ -12,7 +12,7 @@ const Result = ({label}) => {
     }
 
     return (
-        <div className="card max-w-[464px] py-5 flex flex-col gap-[70px] items-center justify-center w-screen h-fit bg-white rounded-[24px] relative">
+        <div className="m-3 card max-w-[464px] py-5 flex flex-col gap-[70px] items-center justify-center w-screen h-fit bg-white rounded-[24px] relative">
             <div>
                 <ResultImg />
             </div>
