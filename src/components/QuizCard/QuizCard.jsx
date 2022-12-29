@@ -17,7 +17,7 @@ const QuizCard = ({gameName}) => {
                     <h1 className="font-[700] text-4xl text-[#F2F2F2] mb-[10px]">{gameName}</h1>
                     <CardImg />
                 </header>
-                <main className="mt-[100px] p-5">
+                <main className="mt-[50px] p-5">
                     {startGame ? <QuizQuestion /> : <QuizStart /> }
                 </main>
                 <footer className="p-5 flex justify-end">
