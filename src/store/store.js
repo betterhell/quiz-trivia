@@ -1,9 +1,7 @@
 import create from "zustand";
 import axios from "axios";
-import {persist} from "zustand/middleware";
 
-
-export const useQuizStore = create(persist((set, get) => ({
+export const useQuizStore = create((set, get) => ({
    questions: [],
    currentIndex: 0,
    score: 0,
@@ -47,4 +45,4 @@ export const useQuizStore = create(persist((set, get) => ({
     handleStartGame: () => {
         set({gameOver: false, startGame: true})
     }
-})))
+}))
