@@ -4,13 +4,10 @@ import {useQuizStore} from "./store/store";
 import Result from "./components/Result/Result";
 
 function App() {
-    const questions = useQuizStore(state => state.questions)
-    const getAllQuestions = useQuizStore(state => state.getAllQuestions)
-    const gameOver = useQuizStore(state => state.gameOver)
-
-    useEffect(() => {
-        getAllQuestions()
-    }, [])
+    const {
+        questions,
+        gameOver,
+    } = useQuizStore()
 
     useEffect(() => {
     },[questions.length])
