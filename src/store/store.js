@@ -12,7 +12,7 @@ export const useQuizStore = create((set, get) => ({
    startGame: false,
 
     getAllQuestions: () => {
-       axios.get("https://the-trivia-api.com/api/questions?limit=5&difficulty=medium")
+       axios.get("https://the-trivia-api.com/api/questions?limit=10&difficulty=medium")
            .then(res => {
                set({questions : res.data.map((quest) => ({
                        id: quest.id,
